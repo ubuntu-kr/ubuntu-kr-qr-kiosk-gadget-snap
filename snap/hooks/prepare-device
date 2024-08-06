@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# do nothing for now
+
+snap set ubuntu-kr-qr-kiosk server.host="https://kiosk.ubuntu-kr.org"
+snap set ubuntu-frame config="cursor=auto"
+/snap/ubuntu-kr-qr-kiosk/current/bin/setup.sh
