@@ -38,3 +38,20 @@ volumes:
         type: 83,0FC63DAF-8483-4772-8E79-3D69D8477DE4
         # XXX: make auto-grow to partition
         size: 1500M
+
+connections:
+  - plug: ubuntu-kr-qr-kiosk:gpu-2404
+    slot: mesa-2404:gpu-2404
+  - plug: ubuntu-kr-qr-kiosk:hardware-observe
+  - plug: ubuntu-kr-qr-kiosk:home
+  - plug: ubuntu-kr-qr-kiosk:network
+  - plug: ubuntu-kr-qr-kiosk:network-bind
+  - plug: ubuntu-kr-qr-kiosk:network-manager
+    slot: network-manager:service
+  - plug: ubuntu-kr-qr-kiosk:opengl
+  - plug: ubuntu-kr-qr-kiosk:process-control
+  - plug: ubuntu-kr-qr-kiosk:raw-usb
+  - plug: ubuntu-kr-qr-kiosk:system-observe
+  - plug: ubuntu-kr-qr-kiosk:wayland
+    slot: ubuntu-frame:wayland
+
